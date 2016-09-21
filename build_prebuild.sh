@@ -1,10 +1,12 @@
 #! /bin/sh
 
-export COCOS_CONSOLE_ROOT='/Users/james/repos/github-repos/cocos2d-x/tools/cocos2d-console/bin'
+COCOS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-export COCOS_X_ROOT='/Users/james/repos'
+export COCOS_CONSOLE_ROOT=$COCOS_DIR'/tools/cocos2d-console/bin'
 
-export COCOS_TEMPLATES_ROOT='/Users/james/repos/github-repos/cocos2d-x/templates'
+export COCOS_X_ROOT=$COCOS_DIR
+
+export COCOS_TEMPLATES_ROOT=$COCOS_DIR'/templates'
 
 export ANDROID_SDK_ROOT='/Users/james/Library/Android/sdk'
 
